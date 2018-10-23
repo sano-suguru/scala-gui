@@ -23,7 +23,7 @@ class Main extends Application {
     val root = new StackPane()
     root.getChildren.add(btn)
 
-    val scene = new Scene(root, 300, 350)
+    val scene = new Scene(root, 300, 250)
     primaryStage.setTitle("コンソールにこんにちはを出力")
     primaryStage.setScene(scene)
     primaryStage.show()
