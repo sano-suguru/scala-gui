@@ -11,7 +11,7 @@ object Main extends App {
 
 class Main extends Application {
   override def start(primaryStage: Stage): Unit = {
-    val btn = Button()
+    val btn = new Button()
     btn.setText("押してね")
 
     btn.setOnAction(new EventHandler[ActionEvent] {
