@@ -14,17 +14,15 @@ class Main extends Application {
     val btn = new Button()
     btn.setText("押してね")
 
-    btn.setOnAction(new EventHandler[ActionEvent] {
-      override def handle(event: ActionEvent): Unit = {
-        println("こんにちは")
-      }
+    btn.setOnAction((_: ActionEvent) => {
+      println("こんにちは")
     })
 
     val root = new StackPane()
     root.getChildren.add(btn)
 
     val scene = new Scene(root, 300, 250)
-    primaryStage.setTitle("コンソールにこんにちはを出力")
+    primaryStage setTitle "コンソールにこんにちはを出力"
     primaryStage.setScene(scene)
     primaryStage.show()
   }
